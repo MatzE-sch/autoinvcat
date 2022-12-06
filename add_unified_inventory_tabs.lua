@@ -1,6 +1,4 @@
 minetest.after(0, function()
-    print("========== after 0 ui tabs ==========")
-
     -- get all registered nodes
     local node_table = minetest.registered_nodes
     local mods_with_nodes = {}
@@ -19,21 +17,6 @@ minetest.after(0, function()
         end
         
     end
-    -- print(dump(mods_with_nodes))
-
-    -- test stuff
-    for mod, nodes in pairs(mods_with_nodes) do
-        print(mod, #nodes)
-        if mod == 'worldedit' then
-            for i, node in pairs(nodes) do
-                print(dump(node_table[node]))
-            end
-        end
-    end
-
-    
-
-    ---------------
 
     -- add them to unified inventory
     local min_registrations_per_mod = 10
@@ -58,7 +41,7 @@ minetest.after(0, function()
             })
         end
     end
-    print(dump(nodes_with_not_enough_siblings))
+
     -- group small mods with les then min_registrations_per_mod (e.g. 10) nodes in 1 category
     unified_inventory.register_category("Misc.", {
         symbol = "autoinvcat_smile.png", -- TODO: find mod symbol
@@ -71,8 +54,6 @@ minetest.after(0, function()
         items = nodes_with_not_enough_siblings
         -- ^ List of items within this category
     })
-
-    print("========== end after 0 ui tabs ==========")
 
 end)
 
