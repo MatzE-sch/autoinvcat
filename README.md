@@ -16,5 +16,5 @@ The order is the alphabetical order of the mod name
     - use icon provided by mod?
     - use 1 char of mod name in pixel icon?
 
-Lizenz:
-Copyright (C) 2022 MatzE, Lizenz: Creative Commons BY-SA 4.0
+## licens:
+Copyright (C) 2022 MatzE, licens: Creative Commons BY-SA 4.0
