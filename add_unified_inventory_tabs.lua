@@ -28,8 +28,10 @@ minetest.after(0, function()
                 table.insert(nodes_with_not_enough_siblings, node)
             end
         else
+            -- print("mod", type(mod), mod)
             unified_inventory.register_category(mod, {
-                symbol = "autoinvcat_smile.png", -- TODO: find mod symbol
+                -- symbol = "autoinvcat_cat_".. mod:sub(1,1) ..".png", -- TODO: find mod symbol
+                symbol = cat_icon(mod),
                 -- ^ Can be in the format "mod_name:item_name" or "texture.png",
                 label = mod, -- TODO: find appropriate label
                 index = string_to_numer_alphabetical_order(mod),
@@ -44,7 +46,7 @@ minetest.after(0, function()
 
     -- group small mods with les then min_registrations_per_mod (e.g. 10) nodes in 1 category
     unified_inventory.register_category("Misc.", {
-        symbol = "autoinvcat_smile.png", -- TODO: find mod symbol
+        symbol = "autoinvcat_misc.png", -- TODO: find mod symbol
         -- ^ Can be in the format "mod_name:item_name" or "texture.png",
         label = "Misc. nodes label", -- TODO: find appropriate label
         index = 100, 
