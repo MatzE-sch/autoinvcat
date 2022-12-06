@@ -6,8 +6,11 @@ nodes from mods with few nodes are collected in one tab.
 
 <img src="textures/screenshot.png">
 
+## interaction with unified_inventory
+AutoInvCat uses sorting numbers from 100 to 127 for the automatically created inventory tabs.
+The order is the alphabetical order of the mod name
+
 ## TODO:
-- fixed category order
 - also categorze items
 - category icons?
 

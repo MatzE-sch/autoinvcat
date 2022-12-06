@@ -32,7 +32,7 @@ minetest.after(0, function()
                 symbol = "autoinvcat_smile.png", -- TODO: find mod symbol
                 -- ^ Can be in the format "mod_name:item_name" or "texture.png",
                 label = mod, -- TODO: find appropriate label
-                index = 20, -- TODO: use mod name to sort
+                index = string_to_numer_alphabetical_order(mod),
                 -- ^ Categories are sorted by index. Lower numbers appear before higher ones.
                 --   By default, the name is translated to a number: AA -> 0.0101, ZZ -> 0.2626
                 ---  Predefined category indices: "all" = -2, "uncategorized" = -1
@@ -47,7 +47,7 @@ minetest.after(0, function()
         symbol = "autoinvcat_smile.png", -- TODO: find mod symbol
         -- ^ Can be in the format "mod_name:item_name" or "texture.png",
         label = "Misc. nodes label", -- TODO: find appropriate label
-        index = 10, -- TODO: use mod name to sort
+        index = 100, 
         -- ^ Categories are sorted by index. Lower numbers appear before higher ones.
         --   By default, the name is translated to a number: AA -> 0.0101, ZZ -> 0.2626
         ---  Predefined category indices: "all" = -2, "uncategorized" = -1
