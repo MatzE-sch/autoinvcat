@@ -13,6 +13,8 @@ The order is the alphabetical order of the mod name
 ## TODO:
 - also categorze items
 - category icons?
+    - use icon provided by mod?
+    - use 1 char of mod name in pixel icon?
 
 Lizenz:
 Copyright (C) 2022 MatzE, Lizenz: Creative Commons BY-SA 4.0
