@@ -4,7 +4,7 @@ Automatic inventory categories,
 creates a inventory tab for every mod with many nodes (e.g. moreblocks)
 nodes from mods with few nodes are collected in one tab.
 
-<img src="textures/screenshot.png">
+![screenshot](screenshot.png)
 
 ## interaction with unified_inventory
 AutoInvCat uses sorting numbers from 100 to 127 for the automatically created inventory tabs.
