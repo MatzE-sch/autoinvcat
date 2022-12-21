@@ -18,8 +18,14 @@ function string_to_numer_alphabetical_order(str)
 end
 
 function char_to_num(c)
+    -- print("char? ", c)
+    -- print("number? ", tonumber(c, 36))
 	-- 'a' = 1; 'b' = 2; ...  'z' = 26
-	return tonumber(c, 36)-9
+	local numberwith9more = tonumber(c, 36)
+    if a == nil then
+        return 0
+    end
+    return number_with9more-9
 end
 
 --- test cases
