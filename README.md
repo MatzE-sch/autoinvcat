@@ -10,6 +10,13 @@ nodes from mods with few nodes are collected in one tab.
 AutoInvCat uses sorting numbers from 100 to 127 for the automatically created inventory tabs.
 The order is the alphabetical order of the mod name
 
+## How to install:
+The whole project is the mod.
+Put the project folder into the Mods Directory of Minetest.
+
+### How to find the Mods Directory?
+Minetest > About > Open User Data Directory > Mods
+
 ## TODO:
 - also categorze items
 - category icons?
